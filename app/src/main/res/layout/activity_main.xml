@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chinasunsoft.ept.ad.view.MainActivity"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+
+    >
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <com.chinasunsoft.ept.ad.view.common.MWebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+</FrameLayout>
+    <ImageView
+        android:id="@+id/backgroud"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bootup1"
+        />
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/progressbar"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:indeterminate="true"
+        app:mpb_progressStyle="horizontal"
+        app:mpb_useIntrinsicPadding="false"
+        app:mpb_showProgressBackground="false"
+        app:mpb_progressTintMode="?colorControlActivated"
+        style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal.NoPadding" />
+
+</FrameLayout>
